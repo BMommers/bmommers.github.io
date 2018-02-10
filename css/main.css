@@ -87,13 +87,12 @@ header p {
 }
 
 .content .text-overlay p{
-    visibility: hidden;
+    display: none;
 }
 
 .content .text-overlay p:hover{
-    visibility: visible;
+    display: block;
 }
-
 
 .grow:hover {
     transform: scale(1.1);
