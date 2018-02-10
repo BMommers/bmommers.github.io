@@ -36,7 +36,7 @@ header p {
     color: #000;
     height: 500px;
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
     text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -49,12 +49,45 @@ header p {
 
 .jumbotron h3 {
     margin: 0 0 20px;
-    color: #fff;
+    color: #000000;
 }
 
-section .row img {
+.content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content-item {
+    height: 200rem;
+}
+.content div {
     margin: 0 0 30px;
     width: 100%;
+}
+
+.content div p {
+    position: absolute;
+    bottom: 0;
+}
+
+#experience div p{
+    color: red;
+}
+
+.content .text-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.3);
 }
 
 .col-md-6 {
