@@ -81,7 +81,7 @@ header p {
     display: none;
 }
 
-.content .text-overlay p:hover{
+.grow:hover p{
     display: block;
 }
 
