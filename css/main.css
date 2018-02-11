@@ -61,7 +61,7 @@ header p {
 
 .content div {
     margin: 0 0 30px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .content div p {
