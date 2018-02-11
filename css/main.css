@@ -69,20 +69,12 @@ header p {
     width: 100%
 }
 
-#experience div p{
-    color: red;
-}
-
 .content .text-overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%
-}
-
-.grow {
-    transition: all .2s ease-in-out;
 }
 
 .content .text-overlay p{
@@ -93,6 +85,10 @@ header p {
     display: block;
 }
 
+.grow {
+    transition: all .2s ease-in-out;
+}
+
 .grow:hover {
     transform: scale(1.1);
 }
@@ -100,6 +96,9 @@ header p {
 .col-md-6 {
     margin: 0 0 30px;
 }
+
+
+
 
 .btn.btn-primary {
     border-radius: 2px;
@@ -119,6 +118,9 @@ header p {
     color: #ffffff;
     margin: 0 0 30px;
 }
+
+
+
 
 footer {
     font-size: 12px;
