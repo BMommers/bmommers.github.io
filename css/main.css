@@ -61,12 +61,12 @@ header p {
 
 .content div {
     margin: 0 0 30px;
-    /*width: 100%;*/
 }
 
 .content div p {
     position: absolute;
     bottom: 0;
+    width: 100%
 }
 
 #experience div p{
@@ -78,6 +78,7 @@ header p {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
+    width: 100%
 }
 
 .grow {
