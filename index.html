@@ -11,15 +11,48 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
 
     <body>
         <header class="container">
   	        <div class="row">
                 <h1 class="col-sm-4">Dashboard</h1>
+                <nav class="col-sm-8 text-right">
+                    <p>Lorem</p>
+                    <p>Ipsum</p>
+                    <p>Dolor</p>
+                </nav>
             </div>
         </header>
 
@@ -28,47 +61,54 @@
                 <div class="row text-center">
                     <h2>Welkom Bart!</h2>
                     <h3>Waarmee ga je aan de slag?</h3>
+                    <a class="btn btn-primary" href="#" role="button">Hire me!</a>
+                    <a class="btn btn-secondary" href="#headings" role="button">My resume</a>
                 </div>
             </div>
         </section>
 
 
 
-        <section class="container content">
+        <section class="container" id="headings">
         	<div class="row">
-                <div class="col-sm-6 grow")>
-                    <div>
+                <figure class="col-sm-6 grow")>
+                    <a href="#">
                         <img src="./img/aboutme.png">
                         <div class="text-overlay">
                             <h1>Personalia</h1>
                             <p> Learn about me</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 grow">
-                    <div>
+                    </a>
+                </figure>
+                <figure class="col-sm-6 grow">
+                    <a href="#">
                         <img src="./img/experience.jpeg">
                         <div class="text-overlay">
                             <h1>Experience</h1>
                             <p>Learn about where I've worked</p>
                         </div>
-                    </div>
-                </div>
+                    </a>
+                </figure>
             </div>
+
             <div class="row">
                 <div class="col-sm-6 grow">
-                    <img src="./img/windows.jpg">
-                    <div class="text-overlay">
-                        <h1>Operating Systems</h1>
-                        <p> Learn about my knowledge about Operating Systems</p>
-                    </div>
+                    <a href="#">
+                        <img src="./img/windows.jpg">
+                        <div class="text-overlay">
+                            <h1>Operating Systems</h1>
+                            <p> Learn about my knowledge about Operating Systems</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-sm-6 grow">
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg">
-                    <div class="text-overlay">
-                        <h1>Education</h1>
-                        <p> View my education</p>
-                    </div>
+                    <a href="#">
+                        <img src="./img/education.jpeg">
+                        <div class="text-overlay">
+                            <h1>Education</h1>
+                            <p> View my education</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

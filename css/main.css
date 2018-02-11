@@ -10,7 +10,7 @@ header {
 header .row,
 footer .row {
     display: flex;
-  align-items: center;
+    align-items: center;
 }
 
 header h1 {
@@ -34,7 +34,7 @@ header p {
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     color: #000;
-    height: 500px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
     text-shadow: 0.25px 0.25px 0.25px #000000;
@@ -52,38 +52,30 @@ header p {
     color: #000000;
 }
 
-.content {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+
+
+.container div {
+    margin: 30px 0;
 }
 
-
-.content div {
-    margin: 0 0 30px;
-}
-
-.content div p {
+figure p {
     position: absolute;
     bottom: 0;
-    width: 100%
+    width: 100%;
 }
 
-.content .text-overlay {
+.text-overlay {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%
+    width: 100%;
 }
 
-.content .text-overlay p{
+.text-overlay p{
     display: none;
 }
 
-.grow:hover p{
-    display: block;
-}
 
 .grow {
     transition: all .2s ease-in-out;
@@ -91,32 +83,42 @@ header p {
 
 .grow:hover {
     transform: scale(1.1);
+    z-index: 99;
 }
 
-.col-md-6 {
-    margin: 0 0 30px;
+.grow:hover p{
+    display: block;
 }
 
 
 
 
-.btn.btn-primary {
+
+.btn {
     border-radius: 2px;
     border: 0;
-    color: #fbd1d5;
     text-shadow: none;
+    font-size: 22px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #81b3fd;
+}
+
+.btn-primary:hover {
+    color: #81b3fd;
     background-color: #ffffff;
 }
 
-.btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
+.btn-secondary {
+    color: #81b3fd;
+    background-color: #e5f3fa;
 }
 
-.btn-secondary {
-    background-color: #E8DFE0;
-    color: #ffffff;
-    margin: 0 0 30px;
+.btn-secondary:hover {
+    color: #81b3fd;
+    background-color: #ffffff;
 }
 
 
