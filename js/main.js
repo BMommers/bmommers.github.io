@@ -6,4 +6,22 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+    var x = document.getElementById("mySidenav");
+    if (x.className === "sidenav") {
+        x.className += " responsive";
+    } else {
+        x.className = "sidenav";
+    }
 }
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+

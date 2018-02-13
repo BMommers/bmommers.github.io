@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="nl">
+<html class="no-js" lang="nl" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,6 +17,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/main.js"></script>
+
         <script>
             $(document).ready(function(){
                 // Add smooth scrolling to all links
@@ -61,83 +62,104 @@
             </div>
         </header>
 
-        <section class="jumbotron">
-            <div class="container">
-                <div class="row text-center">
-                    <h2>Welcome!</h2>
-                    <h3>To my digital CV</h3>
-                    <a class="btn btn-primary" href="#" role="button">Hire me!</a>
-                    <a class="btn btn-secondary" href="#headings" role="button">My resume</a>
+        <div id="mySidenav" class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <a href="javascript:void(0);" class="sideMenuToggle" onclick="openNav()">&#9776;</a>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+
+
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row text-center">
+                        <h2>Welcome!</h2>
+                        <h3>To my digital CV</h3>
+                        <a class="btn btn-primary" href="#" role="button">Hire me!</a>
+                        <a class="btn btn-secondary" href="#headings" role="button">My resume</a>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <canvas>
+                <script src="./js/jumbotron.js"></script>
+            </canvas>
 
 
 
-        <section class="container" id="headings">
-        	<div class="row">
-                <figure class="col-sm-6 grow")>
-                    <a href="#">
-                        <img src="./img/aboutme.png">
-                        <div class="text-overlay">
-                            <h1>Personalia</h1>
-                            <p>Learn about me</p>
-                        </div>
-                    </a>
-                </figure>
-                <figure class="col-sm-6 grow">
-                    <a href="#">
-                        <img src="./img/experience.jpeg">
-                        <div class="text-overlay">
-                            <h1>Experience</h1>
-                            <p>Learn about where I've worked</p>
-                        </div>
-                    </a>
-                </figure>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 grow">
-                    <a href="#">
-                        <img src="./img/windows.jpg">
-                        <div class="text-overlay">
-                            <h1>Operating Systems</h1>
-                            <p>Learn about my knowledge about Operating Systems</p>
-                        </div>
-                    </a>
+            <section class="container" id="headings">
+            	<div class="row">
+                    <figure class="col-sm-6 grow")>
+                        <a href="#">
+                            <img src="./img/aboutme.png">
+                            <div class="text-overlay">
+                                <h1>Personalia</h1>
+                                <p>Learn about me</p>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure class="col-sm-6 grow">
+                        <a href="#">
+                            <img src="./img/experience.jpeg">
+                            <div class="text-overlay">
+                                <h1>Experience</h1>
+                                <p>Learn about where I've worked</p>
+                            </div>
+                        </a>
+                    </figure>
                 </div>
-                <div class="col-sm-6 grow">
-                    <a href="#">
-                        <img src="./img/education.jpeg">
-                        <div class="text-overlay">
-                            <h1>Education</h1>
-                            <p>View my education</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 grow">
-                    <a href="#">
-                        <img src="./img/programming.jpg">
-                        <div class="text-overlay">
-                            <h1>Programming</h1>
-                            <p>My experience in programming and what languages</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 grow">
-                    <a href="#">
-                        <img src="./img/certification.jpeg">
-                        <div class="text-overlay">
-                            <h1>Certification</h1>
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
 
+                <div class="row">
+                    <div class="col-sm-6 grow">
+                        <a href="#">
+                            <img src="./img/windows.jpg">
+                            <div class="text-overlay">
+                                <h1>Operating Systems</h1>
+                                <p>Learn about my knowledge about Operating Systems</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 grow">
+                        <a href="#">
+                            <img src="./img/education.jpeg">
+                            <div class="text-overlay">
+                                <h1>Education</h1>
+                                <p>View my education</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 grow">
+                        <a href="#">
+                            <img src="./img/programming.jpg">
+                            <div class="text-overlay">
+                                <h1>Programming</h1>
+                                <p>My experience in programming and what languages</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 grow">
+                        <a href="#">
+                            <img src="./img/certification.jpeg">
+                            <div class="text-overlay">
+                                <h1>Certification</h1>
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
 
 
         <footer class="container">
